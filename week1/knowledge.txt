@@ -1,0 +1,87 @@
+LIST – danh sách thay đổi được
+
+List dùng để chứa nhiều giá trị, có thể thay đổi (thêm, xóa, sửa).
+
+Khai báo:
+my_list = [1, 2, 3, 4]
+
+Đặc điểm:
+Có thứ tự (index)
+Thay đổi được
+Hỗ trợ append, remove, sort...
+
+Ví dụ:
+my_list = [1, 2, 3]
+
+# truy cập
+print(my_list[0])       # 1
+
+# thêm
+my_list.append(4)       # [1,2,3,4]
+
+# sửa
+my_list[1] = 20         # [1,20,3,4]
+
+# xóa
+my_list.remove(3)       # [1,20,4]
+
+
+ --- > Dùng khi bạn cần một danh sách có thể thay đổi.
+
+2. TUPLE – bộ giá trị KHÔNG thay đổi được
+
+Tuple giống list nhưng không thể sửa sau khi tạo.
+
+Khai báo:
+my_tuple = (1, 2, 3)
+
+Đặc điểm:
+
+Có thứ tự
+
+KHÔNG thay đổi được (immutable)
+
+Chủ yếu dùng cho dữ liệu cố định
+
+Ví dụ:
+my_tuple = (10, 20, 30)
+
+print(my_tuple[1])   # 20
+
+# my_tuple[1] = 99   # ❌ lỗi, không sửa được
+
+
+-->Dùng khi dữ liệu không bao giờ cần chỉnh sửa.
+
+3. DICTIONARY – lưu theo cặp key : value
+
+Dict dùng để lưu dữ liệu dạng từ điển, tức là “tên → giá trị”.
+
+Khai báo:
+my_dict = {"name": "Dung", "age": 20}
+
+Đặc điểm:
+
+Truy cập theo keys, không theo index
+
+Thay đổi được
+
+Nhanh và tiện
+
+Ví dụ:
+my_dict = {"name": "Dung", "age": 20}
+
+# truy cập
+print(my_dict["name"])      # Dung
+
+# thêm
+my_dict["address"] = "Hanoi"
+
+# sửa
+my_dict["age"] = 21
+
+# xóa
+del my_dict["name"]
+
+
+Dùng khi dữ liệu có ý nghĩa theo dạng thuộc tính.
