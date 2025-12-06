@@ -85,3 +85,26 @@ del my_dict["name"]
 
 
 Dùng khi dữ liệu có ý nghĩa theo dạng thuộc tính.
+
+
+
+
+
+
+ví dụ, 1 list trong python hoàn toàn có thể dùng để lưu trữ 1 dirtionary
+
+students = [
+    {"id": "S1", "name": "An"},
+    {"id": "S2", "name": "Bình"},
+    {"id": "S3", "name": "Chi"}
+]
+
+cách truy cập là ; 
+print(students[0]["name"])   # -> An
+print(students[2]["id"])     # -> S3
+
+các thêm vào là ; 
+
+courses = []
+courses.append({"id": "C1", "name": "Math"})
+courses.append({"id": "C2", "name": "Biology"})

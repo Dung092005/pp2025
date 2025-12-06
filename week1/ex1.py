@@ -33,15 +33,12 @@ def input_info_course():
 def input_mark():
     course_id = input("Enter course id to input mark: ")
 
-    # Kiểm tra course có tồn tại không
     if course_id not in mark:
         print("Course not found!")
         return
 
-    # Nếu muốn nhập lại điểm thì có thể reset list:
+  
     mark[course_id] = []
-
-    # Nhập điểm cho từng sinh viên
     for student in students:
         a = float(input(f"Mark for student {student['name']} ({student['id']}): "))
         mark[course_id].append((student['id'], a))

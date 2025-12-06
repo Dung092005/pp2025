@@ -20,6 +20,23 @@ print(s[-6:])
 
 
 #format trong puton là để lấp cái parameter vào cái {},{}
-name = input("input name: ")
+name = "tiến Dũng"
 age = 19
 print("greeting,{}, you are {}".format(name,age))
+
+
+name  = ["ICT", "ict"] 
+print(type(name))
+name = name + ["ict2"]
+
+
+#replace element
+name[1] = "i see tea"
+print(name)
+
+name[1:4] = ["icy tea ", "i see tea","tien dung"]
+name[1:1] = ["ice city"]
+#delete 1 element using: del
+
+del name[1] 
+print(name)
